@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <title> Model</title>
+</head>
+<form class="form" action="/predict" method="POST">
+    <fieldset>
+        <legend>Input values:</legend>
+
+        {% if label %}
+          <h1>{{label}}</h1>
+        {% endif %}
+
+        Enter Your CGPA:
+        <input name="cgpa" type="float" required>
+        <br>
+        <br> Enter Your IQ:
+        <input name="iq" type="float" required>
+        <br>
+        <br>
+        <br>
+        <input type="submit" value = 'Predict'>
+
+    </fieldset>
+</form>
+</html>
