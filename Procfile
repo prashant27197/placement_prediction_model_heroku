@@ -1,1 +1,1 @@
-web: guni corn app:app
+web: gunicorn app:app
